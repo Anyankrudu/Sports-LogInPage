@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LOG IN OR SIGN UP</h1>
+            <p>Get access to live sports, highlights, shows, news, scores and much more.</p>
+        </header>
+        <form novalidate>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+                <label for="email">Email address</label>
+                <span class="error" id="email-error">Field can't be empty</span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" autocomplete="current-password" required placeholder=" ">
+                <label for="password">Password</label>
+                <!-- using aria-label on button cus it's purpose is visually obvious -->
+                 <!-- type=button prevents it from submitting the form -->
+                <button type="button" class="toggle-password"  id="toggle-password" aria-label="Show password">
+                    <i class="fa-regular fa-eye"></i>
+                </button>
+                <span class="error" id="password-error">Field can't be empty</span>
+            </div>
+            <button type="submit" >Continue</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+        <div class="divider">
+            <span>or</span>
+        </div>
+        <div class="social-login">
+            <a href="https://accounts.google.com">
+                <svg class="icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59a14.5 14.5 0 0 1 0-9.18l-7.98-6.19a24.08 24.08 0 0 0 0 21.56l7.98-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                Continue with Google
+            </a>
+            <a href="https://www.facebook.com/login">
+                <svg class="icon" viewBox="0 0 48 48"><circle cx="24" cy="24" r="24" fill="#1877F2"/><path fill="#FFFFFF" d="M33.12 30.94l1.06-6.94H27.75v-4.5c0-1.9.93-3.75 3.91-3.75h3.03v-5.91s-2.75-.47-5.37-.47c-5.48 0-9.07 3.32-9.07 9.34V24h-6.09v6.94h6.09v16.77a24.14 24.14 0 0 0 7.5 0V30.94h5.37z"/></svg>
+                Continue with Facebook
+            </a>
+            <a href="https://appleid.apple.com">
+                <svg class="icon" viewBox="0 0 814 1000"><path fill="#FFFFFF" d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57.8-155.5-127.4c-58.3-81.5-105.4-208-105.4-328.3 0-193.2 125.6-295.6 249.3-295.6 65.7 0 120.5 43.1 161.7 43.1 39.2 0 100.5-45.7 175.4-45.7 28.3 0 130.3 2.6 197.5 99.8zm-234.7-182.6c31.2-36.9 53.4-88.1 53.4-139.3 0-7.1-.6-14.3-1.9-20.1-50.9 1.9-110.8 33.9-147.1 76.5-28.9 32.5-57.8 83.8-57.8 135.6 0 7.8.6 15.6 1.3 18.2 2.6.6 6.4 1.3 10.2 1.3 45.7 0 103.7-30.6 141.9-72.2z"/></svg>
+                Continue with Apple
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
