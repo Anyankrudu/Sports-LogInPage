@@ -1,0 +1,23 @@
+{
+  "editor.foldingStrategy": "indentation",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "allDocuments",
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.enabled": true,
+  "javascript.suggest.completeJSDocs": true,
+  "css.validate": true,
+  "css.completion.completePropertyWithSemicolon": true,
+  "html.suggest.html5": true,
+  "html.autoClosingTags": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}

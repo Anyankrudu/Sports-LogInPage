@@ -233,3 +233,9 @@ button:not(.toggle-password):hover {
     margin-top: 0.2rem;
     text-align: left;
 }
+
+
+/* !important to override :hover rule which has more precedence */
+.input-error {
+    border-color: red !important;
+}
