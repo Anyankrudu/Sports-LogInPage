@@ -26,6 +26,7 @@ function getEmailError() {
     // Trim() the email to remove leading/trailing spaces, which can cause false validation errors.
     const value = emailInput.value.trim();
     if (!value) return "Field can't be empty";
+    // Regular expression to validate email format. This regex checks for a basic structure of an email address (username@domain)
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return "Invalid email format";
     return "";
 }
@@ -71,7 +72,7 @@ function isFormValid() {
     const passwordMsg = validateField(passwordInput, passwordError, getPasswordError);
     return !emailMsg && !passwordMsg
 }
-
+ 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
